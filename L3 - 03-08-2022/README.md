@@ -33,7 +33,7 @@
 - If we pass that argument some data then it will use that data and put it in the parameter, otherwise it will pick from the default parameters.
 
 ### Undefined
-- If we are not sending a data as an argument adn even if the default parameter is also NOT present, then it will give value as undefined.
+- If we are not sending a data as an argument and even if the default parameter is also NOT present, then it will give value as undefined.
 
 ### Return
 - This is the resonse/output of a function.
