@@ -80,7 +80,7 @@ for(const <element> of <array_variable>) {
 }
 
 ### for in
-- This is for Index.
+- This is for Object.
 - In case of arrays we generally don't need it, but in case of object, we need it.
 - Usage:
 for(const <key> of <object_variable>) {
