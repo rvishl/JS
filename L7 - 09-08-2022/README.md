@@ -43,6 +43,46 @@
 - Usage: When you are search for something, it will return that.
 - In a case where we have more than one elements which matches, then it will return the first occurence.
 
-### findIndex
+### findLast
+- Kind of same as find, but this returns the LAST occurence.
 
-01:57:00
+### findIndex
+- This is just like find, but instead of returning the element, it will return the index.
+- We pass the callback function, that function will get 3 parameters, element, index and original _array. The callback can return boolean.
+- This will give INDEX of the first element which matches the condition.
+
+### findLastIndex
+- Kind of same as findIndex, but this return the index of LAST occurence.
+
+**We do have indexOf method, but that method does not accept any callback, therefore that cannot be used for complicated arrays.**
+
+### reverse
+- This will reverse the array.
+- [1, 2, 3, 4, 5].reverse() => [5, 4, 3, 2, 1];
+- This will change the array.
+- This will change the array.
+- This is an in place algorithm. Which means, this will change the original array.
+- We have to be a little careful with this.
+
+
+### flat
+- This is used to flatten the array.
+- Reducing the dimensionality.
+- This method by default will reduce the dimensionality by 1. However, in case we want to reduce even more, then we can pass the depth as an argument.
+
+# Assignment:
+- Use this object:
+const products = [
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' }
+]
+## Task 1:
+- Use a forEach and calculate the total price of the products.
+## Task 2:
+- Usa a filter and filter out the products with invalid prices.
+## Task 3:
+- Use find to find the price of avocado.

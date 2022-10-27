@@ -85,28 +85,28 @@
 // const pass_list = marks.filter(e => e > 40 ? true : false);
 // console.log(pass_list);
 
-const marks = [{
-    name: "Ajeet",
-    marks: 55,
-}, {
-    name: "Ritesh",
-    marks: 88,
-}, {
-    name: "Shubham",
-    marks: 78,
-}, {
-    name: "Manish",
-    marks: 75,
-}, {
-    name: "Sunny",
-    marks: 65
-}, {
-    name: "Rauvin",
-    marks: 89,
-}, {
-    name: "Vishal",
-    marks: 14,
-}];
+// const marks = [{
+//     name: "Ajeet",
+//     marks: 55,
+// }, {
+//     name: "Ritesh",
+//     marks: 88,
+// }, {
+//     name: "Shubham",
+//     marks: 78,
+// }, {
+//     name: "Manish",
+//     marks: 75,
+// }, {
+//     name: "Sunny",
+//     marks: 65
+// }, {
+//     name: "Rauvin",
+//     marks: 89,
+// }, {
+//     name: "Vishal",
+//     marks: 14,
+// }];
 
 // const pass_list = marks.filter(e => {
 //     if(e.marks >= 40) {
@@ -123,19 +123,19 @@ const marks = [{
 // const first_fail_student = marks.find(e => e.marks<=20 ? true : false);
 // console.log(first_fail_student);
 
-const menu = [{
-    name: "Burger",
-    price: 120
-}, {
-    name: "Pasta",
-    price: 140
-}, {
-    name: "Noodles",
-    price: 200
-}, {
-    name: "Pizza",
-    price: 250
-}];
+// const menu = [{
+//     name: "Burger",
+//     price: 160
+// }, {
+//     name: "Pasta",
+//     price: 100
+// }, {
+//     name: "Noodles",
+//     price: 190
+// }, {
+//     name: "Pizza",
+//     price: 250
+// }];
 
 //GET the price of noodles.
 // const noodle = menu.find(e => {
@@ -149,12 +149,41 @@ const menu = [{
 // console.log(noodle);
 // console.log(noodle.price);
 
-const budget_items = menu.filter(e => {
-    if(e.price <= 140) {
-        return true;
-    } else {
-        return false;
-    }
-});
+// const budget_items = menu.filter(e => {
+//     if(e.price <= 140) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// });
 
-console.log(budget_items);
+// console.log(budget_items);
+
+// const find_index = menu.findIndex((e) => {
+//     if(e.price < 140) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// });
+// console.log(find_index);
+
+// const find_index = menu.findLastIndex(e => e.price<140 ? true : false);
+// console.log(find_index);
+
+//Reverse
+// const arr= [1, 2, 3, 4, 5];
+// console.log(arr.reverse());
+// console.log(arr);
+// const num = "ABCD";
+
+// flat
+const multi_dimension = ["a", "b", "c", [1, 2, 3, ["x", "y", "z"]]];
+console.log(multi_dimension);
+// const flat = multi_dimension.flat(); //Depth of 1
+const flat = multi_dimension.flat(2); // Depth of 2
+console.log(flat);
+
+// ["a", "b", "c", [1, 2 , 3, ["x", "y", "z"]]};
+// ["a", "b", "c", 1, 2, 3, ["x", "y", "z"]]; // Depth of 1
+// ["a", "b", "c", 1, 2, 3, "x", "y", "z"]; // Depth of 2
