@@ -122,7 +122,7 @@ const users = {
     },
     John: {
         email: 'john@john.com',
-        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node'],
         age: 20,
         isLoggedIn: true,
         points: 50
@@ -143,5 +143,5 @@ const users = {
     }
 }
 
-- From this object, print the list of names of students who are doing MERN (Mongo, Express, React Node).
+- From this object, print the list of names of students who are doing MERN (Mongo, Express, React, Node).
 - Print the list of students who have scored 40 or more marks.
